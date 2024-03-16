@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    line-height: 1.4;
+    font-weight: 300;
+    word-spacing: 0.1rem;
+    letter-spacing:0.05rem;
+}
+
+.hero-section {
+    background-image:url(https://s01.sgp1.cdn.digitaloceanspaces.com/article/194635-jlpktjwble-1696320603.jpeg) ;
+    min-height: 80vh;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-content{
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 64px;
+}
+
+.lg-font{
+    font-size: 100px;
+    font-weight: 100;
+}
+.black-box {
+    min-height: 6rem;
+    background-color: rgb(255, 77, 0);
+    text-align: center;
+}
+.black-box h2{
+   padding: 2rem 2rem 2rem 2rem;
+}
+
+.work {
+    padding: 3rem;
+    display: flex;
+    margin-top: 1rem;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.media{
+    display: flex;
+}
+
+.card{
+  margin: 0rem 2rem 0rem 2rem ;
+  text-align: center; 
+  max-width: 320px;
+  border: 0.1rem solid rgb(178, 230, 178);
+  max-height: 22rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0.1rem 0.01rem 0.7rem rgb(192, 191, 191) ;
+  transition: 0.2s ease-in-out;
+  
+}
+.card img{
+    height: 10rem;
+    /* width: 10rem; */
+    border-radius: 1rem;
+}
+
+.card:hover{
+    transform: scale(1.04);
+    background-color: rgb(235, 231, 231);
+    transition: 0.2s ease-in-out;
+    box-shadow: 0.1rem 0.8rem 3rem rgb(74, 73, 73) ;
+}
+ 
+@media (max-width: 58rem){
+    .black-box{
+       text-align: center;
+    }
+    .work {
+        overflow: hidden;
+        /* background-color: green; */
+    }
+    .card{
+        max-width: 40rem;
+        margin: 1rem;
+        overflow:auto;
+    }
+    .media{
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+    }
+    
+    
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    /* position: relative; */
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright {
+    font-size: 14px;
+}
